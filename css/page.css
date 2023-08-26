@@ -184,13 +184,14 @@
 #photo ul li{
     width: calc((100% - 20px) / 3);
     height: 150px;
-    background-color: red;
+    background-color: #fff;
     float: left;
     margin-right: 10px;
     margin-bottom:10px;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 #photo ul li:nth-child(3n){
@@ -201,4 +202,44 @@
 #photo ul li:nth-child(8),
 #photo ul li:nth-child(9){
     margin-bottom:0;
+}
+
+
+#cover{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 420px;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+}
+
+#cover div{
+    position: absolute;
+    width:80%;
+    height: 0;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    margin: auto;
+}
+#cover span{
+    display: inline-block;
+    width:25px;
+    position: absolute;
+    top: -27px;
+    right: -10px;
+
+}
+#cover span img{
+    filter:invert(100%) sepia(86%) saturate(0%) hue-rotate(255deg) brightness(104%) contrast(101%)
+}
+#cover figure {
+    background-color: #fff;
+}
+#cover figure img{
+    border:7px solid #fff;
+    box-sizing: border-box;
 }

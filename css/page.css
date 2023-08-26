@@ -168,3 +168,37 @@
     padding-bottom:45px;
     border-bottom: 1px solid #e3dddd;
 }
+
+#photo{
+    padding:45px 10px;
+    box-sizing: border-box;
+}
+#photo h2{
+    text-align: center;
+    margin-bottom:25px;
+}
+#photo ul{
+    display: inline-block;
+    width:100%;
+}
+#photo ul li{
+    width: calc((100% - 20px) / 3);
+    height: 150px;
+    background-color: red;
+    float: left;
+    margin-right: 10px;
+    margin-bottom:10px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo ul li:nth-child(3n){
+    margin-right: 0px;
+}
+
+#photo ul li:nth-child(7),
+#photo ul li:nth-child(8),
+#photo ul li:nth-child(9){
+    margin-bottom:0;
+}
